@@ -1,0 +1,43 @@
+<div class="container main-container">
+    <h3>Interpolation</h3>
+    <p>Count of clicks is: {{clickCount}}</p>
+
+    <br>
+    <br>
+    
+    <h3>Property Binding</h3>
+
+    <button class="btn btn-info" [disabled]="clickCount >= 10">Info</button><br><br>
+    <img [src]="urlImage" height="50px" width="50px"/>
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <h3>Event Binding</h3>
+    <button class="btn btn-warning" (click)="addClick()"> Click Me</button>
+    <br>
+    <button class="btn btn-warning" style="margin-top: 10px;" (click)="resetCountClick()"> Reset count click</button>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Two-way Binding</h3>
+    <!--     
+    <input type="text" (keyup)="keyUp($event)" placeholder="Type your name">
+    <br>
+    <br>
+    <label>Your name is: {{ nome }}</label> -->
+
+    <!-- <input type="text" [ngModel]="name" (ngModelChange)='name =$event' placeholder="Type your name">
+    <br>
+    <br>
+    <label>Your name is: {{ name }}</label> -->
+    <input type="text" [(ngModel)]="name" placeholder="Type your name">
+    <br>
+    <br>
+    <label class="{{ name }}">Your name is: {{ name }}</label>
+
+</div>
