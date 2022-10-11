@@ -19,6 +19,7 @@ import { rootRouterConfoig } from './app.routes';
 import { DataBindingComponent } from './demos/data-binding/data-binding.component';
 import { ProductService } from './products/products.service';
 import { ListProductComponent } from './products/list-product/list-product.component';
+import { FileUploadComponent } from './fileupload/fileupload.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ListProductComponent } from './products/list-product/list-product.compo
     AboutComponent,
     ContactComponent,
     DataBindingComponent,
-    ListProductComponent
+    ListProductComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<!-- Page Content -->
+<div class="container main-container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+        <h1 class="display-3">File Upload!</h1>
+        <p class="lead">Here you will upload a file.</p>
+    </header>
+
+    <input type="file" (change)="onFileSelected($event)">
+    <input type="button" value="upload" (click)="onUpload()">
+   
+</div>
+<br>
