@@ -20,6 +20,7 @@ import { DataBindingComponent } from './demos/data-binding/data-binding.componen
 import { ProductService } from './products/products.service';
 import { ListProductComponent } from './products/list-product/list-product.component';
 import { FileUploadComponent } from './fileupload/fileupload.component';
+import { DependentDropdownlist } from './dependent-dropdownlist/dependent-dropdownlist.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { FileUploadComponent } from './fileupload/fileupload.component';
     ContactComponent,
     DataBindingComponent,
     ListProductComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    DependentDropdownlist
   ],
   imports: [
     BrowserModule,
